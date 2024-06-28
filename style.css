@@ -1,40 +1,19 @@
-.container{
+.transform{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffff;
-    height: 600px;
-    width: 600px;
-    background-color: rgb(14, 139, 201);
-
+    background-color: lightgreen;
+    width:100%;
+    margin: 0;
 }
-.box1,.box2,.box3,.box4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    background-color:#90EE90;                
-    height: 200px;
-    width: 200px;
+.transform div{
+    height: 100px;
+    width: 100px;
+    background-color: aliceblue;
+    margin: 10px ;    
 }
+   
 .box1:hover{
-    transform: rotate(360deg);
-    transition:all 1s ease-in-out;
-    background-color: red;
+    transform: rotate3d(1,1,1,45deg);
 }
-.box2:hover{
-    transform: skew(45deg);
-    transition:all 0.5s ease-in-out;
-    background-color:yellow;
-}
-.box3:hover{
-    transform: scale(2);
-    transition:all 1s ease-in-out;
+.bootstrap{
     background-color: burlywood;
-}
-.box4:hover{
-    transform: translate(50px);
-    transition:all 1s ease-in-out;
-    background-color: white;
 }
